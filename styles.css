@@ -505,3 +505,28 @@ html[dir="rtl"] .store-card {
   .membership-card { padding: 34px 24px; }
   .store-card > div { grid-template-columns: 1fr; gap: 3px; }
 }
+
+
+/* V2 full-screen fresh olive-water hero */
+.site-header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.35)}
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;background:#dff4fb}
+.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(238,250,255,.84) 0%,rgba(239,250,255,.48) 42%,rgba(235,248,251,.08) 72%,rgba(0,0,0,.02) 100%)}
+.hero-content{position:relative;z-index:2;min-height:100svh;padding-top:150px;padding-bottom:90px;display:flex;align-items:center}
+.hero-copy{max-width:620px}
+.hero h1{font-size:clamp(3.3rem,7vw,6.6rem);max-width:760px;text-wrap:balance}
+.hero-text{color:#405243;max-width:580px}
+.button-secondary{background:rgba(255,255,255,.46);backdrop-filter:blur(10px)}
+.scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:3;text-decoration:none;font-size:1.4rem;color:#304233;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+@media(max-width:900px){
+ .hero-image{object-position:62% center}
+ .hero-overlay{background:linear-gradient(180deg,rgba(235,249,255,.08) 0%,rgba(235,249,255,.28) 40%,rgba(235,249,255,.88) 78%,rgba(235,249,255,.97) 100%)}
+ .hero-content{align-items:end;padding-top:120px;padding-bottom:76px}
+ .hero h1{font-size:clamp(3rem,12vw,5.5rem)}
+}
+@media(max-width:560px){
+ .hero-image{object-position:66% center}
+ .hero h1{font-size:clamp(2.8rem,13vw,4.7rem)}
+ .hero-text{max-width:95%}
+}
