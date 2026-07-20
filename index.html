@@ -1,210 +1,107 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="OLIVE PEOPLE brings trusted Korean beauty products to Jordan at fair prices." />
-  <meta name="theme-color" content="#3f4a24" />
-  <meta property="og:title" content="OLIVE PEOPLE K-BEAUTY" />
-  <meta property="og:description" content="Trusted Korean beauty for everyday life." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://olivepeoplekbeauty.com/" />
-  <title>OLIVE PEOPLE K-BEAUTY</title>
-  <link rel="icon" href="logo.png" />
-  <link rel="stylesheet" href="styles-v41.css?v=41" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="OLIVE PEOPLE brings trusted Korean beauty to Jordan.">
+  <meta name="theme-color" content="#f5f4ee">
+  <title>OLIVE PEOPLE | K-Beauty in Jordan</title>
+  <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="preload" href="hero-olive-water.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="OLIVE PEOPLE home">
-        <img src="logo.png" alt="" width="44" height="44" />
-        <span>OLIVE PEOPLE</span>
-      </a>
-
-      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">
+    <a class="brand" href="#top" aria-label="OLIVE PEOPLE home">
+      <img src="logo.webp" alt="" width="44" height="44">
+      <span>OLIVE PEOPLE</span>
+    </a>
+    <nav id="nav" class="nav" aria-label="Primary navigation">
+      <a href="#about" data-en="About" data-ar="من نحن">About</a>
+      <a href="#categories" data-en="Categories" data-ar="الفئات">Categories</a>
+      <a href="#store" data-en="Store" data-ar="المتجر">Store</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="languageButton" class="language-button" type="button" aria-label="Switch language">العربية</button>
+      <button id="menuButton" class="menu-button" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
         <span></span><span></span><span></span>
-        <span class="sr-only">Open menu</span>
-      </button>
-
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
-        <a href="#about" data-en="About" data-ar="من نحن">About</a>
-        <a href="#brands" data-en="Brands" data-ar="العلامات">Brands</a>
-        <a href="#products" data-en="Products" data-ar="المنتجات">Products</a>
-        <a href="#membership" data-en="Membership" data-ar="العضوية">Membership</a>
-        <a href="#store" data-en="Store" data-ar="المتجر">Store</a>
-        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
-      </nav>
-
-      <button class="language-button" id="languageButton" type="button" aria-label="Switch language">
-        العربية
       </button>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <img class="hero-image" src="assets/hero-v41.png?v=41" alt="Fresh olive leaves with clear water droplets in sunlight" />
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to learn more">↓</a>
+  <main>
+    <section class="hero" aria-label="Trusted Korean Beauty">
+      <picture>
+        <source srcset="hero-olive-water.webp" type="image/webp">
+        <img src="hero-olive-water.jpg" alt="Olive leaves with water droplets above clear water" fetchpriority="high">
+      </picture>
+      <a class="hero-link hero-link-explore" href="#categories" aria-label="Explore our categories"></a>
+      <a class="hero-link hero-link-story" href="#about" aria-label="Read our story"></a>
+      <a class="scroll-cue" href="#about" aria-label="Scroll down">↓</a>
     </section>
 
-    <section class="trust-strip" aria-label="OLIVE PEOPLE values">
-      <div class="container trust-grid">
-        <div><strong data-en="Authentic" data-ar="أصلي">Authentic</strong><span data-en="Products from trusted sources" data-ar="منتجات من مصادر موثوقة">Products from trusted sources</span></div>
-        <div><strong data-en="Useful" data-ar="مفيد">Useful</strong><span data-en="Selected for everyday routines" data-ar="مختارة للاستخدام اليومي">Selected for everyday routines</span></div>
-        <div><strong data-en="Fair" data-ar="عادل">Fair</strong><span data-en="Good quality at fair prices" data-ar="جودة جيدة بأسعار عادلة">Good quality at fair prices</span></div>
-        <div><strong data-en="Friendly" data-ar="ودود">Friendly</strong><span data-en="Easy help and clear choices" data-ar="مساعدة سهلة وخيارات واضحة">Easy help and clear choices</span></div>
+    <section class="trust-strip" aria-label="Our values">
+      <div><strong data-en="Authentic" data-ar="أصلي">Authentic</strong><span data-en="Trusted Korean products" data-ar="منتجات كورية موثوقة">Trusted Korean products</span></div>
+      <div><strong data-en="Thoughtful" data-ar="مختار بعناية">Thoughtful</strong><span data-en="Useful daily routines" data-ar="روتين يومي عملي">Useful daily routines</span></div>
+      <div><strong data-en="Fair" data-ar="عادل">Fair</strong><span data-en="Quality at sensible prices" data-ar="جودة بأسعار منطقية">Quality at sensible prices</span></div>
+      <div><strong data-en="Local" data-ar="محلي">Local</strong><span data-en="Made for customers in Jordan" data-ar="لعملائنا في الأردن">Made for customers in Jordan</span></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-intro">
+        <p class="eyebrow" data-en="OUR STORY" data-ar="قصتنا">OUR STORY</p>
+        <h2 data-en="Korean beauty, selected for real life in Jordan." data-ar="جمال كوري مختار للحياة اليومية في الأردن.">Korean beauty, selected for real life in Jordan.</h2>
+      </div>
+      <div class="body-copy">
+        <p data-en="OLIVE PEOPLE is being created to make authentic Korean beauty easier to discover, understand and enjoy in Jordan." data-ar="يتم إنشاء أوليف بيبول لجعل مستحضرات التجميل الكورية الأصلية أسهل في الاكتشاف والفهم والاستخدام في الأردن.">OLIVE PEOPLE is being created to make authentic Korean beauty easier to discover, understand and enjoy in Jordan.</p>
+        <p data-en="We focus on practical products, transparent information and an offline experience where customers can explore with confidence." data-ar="نركز على المنتجات العملية والمعلومات الواضحة وتجربة متجر تساعد العملاء على الاختيار بثقة.">We focus on practical products, transparent information and an offline experience where customers can explore with confidence.</p>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container split">
+    <section class="section section-soft" id="categories">
+      <div class="section-heading">
         <div>
-          <p class="eyebrow" data-en="WHY OLIVE PEOPLE" data-ar="لماذا أوليف بيبول">WHY OLIVE PEOPLE</p>
-          <h2 data-en="Korean beauty for real everyday life." data-ar="الجمال الكوري للحياة اليومية الحقيقية.">
-            Korean beauty for real everyday life.
-          </h2>
+          <p class="eyebrow" data-en="CATEGORIES" data-ar="الفئات">CATEGORIES</p>
+          <h2 data-en="Everyday essentials, thoughtfully selected." data-ar="أساسيات يومية مختارة بعناية.">Everyday essentials, thoughtfully selected.</h2>
         </div>
-        <div class="body-copy">
-          <p data-en="We want to make excellent Korean beauty products easier to find in Jordan without making customers feel that good skincare must be expensive."
-             data-ar="نريد أن نجعل منتجات التجميل الكورية الممتازة أسهل في الوصول داخل الأردن، دون أن يشعر العملاء بأن العناية الجيدة بالبشرة يجب أن تكون باهظة الثمن.">
-            We want to make excellent Korean beauty products easier to find in Jordan without making customers feel that good skincare must be expensive.
-          </p>
-          <p data-en="Our selection will focus on authentic products, practical routines, transparent information and prices that make sense."
-             data-ar="سنركز في اختياراتنا على المنتجات الأصلية، والروتين العملي، والمعلومات الواضحة، والأسعار المنطقية.">
-            Our selection will focus on authentic products, practical routines, transparent information and prices that make sense.
-          </p>
-        </div>
+        <p data-en="The first product and brand lineup will be announced as registrations and supplier agreements are completed." data-ar="سيتم الإعلان عن أول قائمة للمنتجات والعلامات بعد استكمال التسجيلات واتفاقيات الموردين.">The first product and brand lineup will be announced as registrations and supplier agreements are completed.</p>
+      </div>
+      <div class="category-grid">
+        <article><span>01</span><h3 data-en="Skincare" data-ar="العناية بالبشرة">Skincare</h3><p data-en="Cleansers, toners, serums, creams and sun care." data-ar="منظفات، تونر، سيروم، كريمات وواقي شمس.">Cleansers, toners, serums, creams and sun care.</p></article>
+        <article><span>02</span><h3 data-en="Makeup" data-ar="المكياج">Makeup</h3><p data-en="Easy colour and complexion products for daily use." data-ar="منتجات مكياج سهلة للاستخدام اليومي.">Easy colour and complexion products for daily use.</p></article>
+        <article><span>03</span><h3 data-en="Hair & Body" data-ar="الشعر والجسم">Hair & Body</h3><p data-en="Practical care for comfortable everyday routines." data-ar="عناية عملية للروتين اليومي.">Practical care for comfortable everyday routines.</p></article>
+        <article><span>04</span><h3 data-en="Lifestyle" data-ar="نمط الحياة">Lifestyle</h3><p data-en="Selected Korean wellness, home and food items." data-ar="منتجات كورية مختارة للعافية والمنزل والطعام.">Selected Korean wellness, home and food items.</p></article>
       </div>
     </section>
 
-    <section class="section section-soft" id="brands">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow" data-en="BRANDS" data-ar="العلامات">BRANDS</p>
-            <h2 data-en="Korean brands, thoughtfully selected." data-ar="علامات كورية مختارة بعناية.">Korean brands, thoughtfully selected.</h2>
-          </div>
-          <p data-en="The final brand lineup will be announced as supplier agreements and product registrations are completed."
-             data-ar="سيتم الإعلان عن قائمة العلامات النهائية بعد استكمال اتفاقيات الموردين وتسجيل المنتجات.">
-            The final brand lineup will be announced as supplier agreements and product registrations are completed.
-          </p>
-        </div>
-
-        <div class="brand-grid" aria-label="Planned brand categories">
-          <article><span>01</span><h3 data-en="Skincare" data-ar="العناية بالبشرة">Skincare</h3><p data-en="Cleansers, toners, serums, creams and sun care." data-ar="منظفات، تونر، سيروم، كريمات وواقي شمس.">Cleansers, toners, serums, creams and sun care.</p></article>
-          <article><span>02</span><h3 data-en="Masks" data-ar="الأقنعة">Masks</h3><p data-en="Sheet masks and targeted treatments." data-ar="أقنعة ورقية وعلاجات مخصصة.">Sheet masks and targeted treatments.</p></article>
-          <article><span>03</span><h3 data-en="Makeup" data-ar="المكياج">Makeup</h3><p data-en="Easy everyday colour and complexion products." data-ar="منتجات مكياج يومية سهلة للبشرة والألوان.">Easy everyday colour and complexion products.</p></article>
-          <article><span>04</span><h3 data-en="Hair & Body" data-ar="الشعر والجسم">Hair & Body</h3><p data-en="Practical care for daily routines." data-ar="عناية عملية للروتين اليومي.">Practical care for daily routines.</p></article>
-        </div>
+    <section class="section store" id="store">
+      <div>
+        <p class="eyebrow" data-en="FIRST STORE" data-ar="المتجر الأول">FIRST STORE</p>
+        <h2 data-en="Preparing our first OLIVE PEOPLE store in Amman." data-ar="نجهز أول متجر أوليف بيبول في عمّان.">Preparing our first OLIVE PEOPLE store in Amman.</h2>
+      </div>
+      <div class="store-panel">
+        <div><span data-en="Location" data-ar="الموقع">Location</span><strong data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</strong></div>
+        <div><span data-en="Opening" data-ar="الافتتاح">Opening</span><strong data-en="To be announced" data-ar="سيتم الإعلان لاحقاً">To be announced</strong></div>
+        <div><span data-en="Experience" data-ar="التجربة">Experience</span><strong data-en="Explore, test and choose with confidence" data-ar="اكتشف وجرّب واختر بثقة">Explore, test and choose with confidence</strong></div>
       </div>
     </section>
 
-    <section class="section" id="products">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow" data-en="PRODUCTS" data-ar="المنتجات">PRODUCTS</p>
-            <h2 data-en="Start with the essentials." data-ar="ابدأ بالأساسيات.">Start with the essentials.</h2>
-          </div>
-          <p data-en="Product names and prices will be added after the first import list is confirmed."
-             data-ar="ستتم إضافة أسماء المنتجات والأسعار بعد تأكيد قائمة الاستيراد الأولى.">
-            Product names and prices will be added after the first import list is confirmed.
-          </p>
-        </div>
-
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-visual visual-one"><span data-en="Daily Cleanser" data-ar="منظف يومي">Daily Cleanser</span></div>
-            <div class="product-info"><p data-en="Everyday care" data-ar="عناية يومية">Everyday care</p><h3 data-en="Gentle cleansing" data-ar="تنظيف لطيف">Gentle cleansing</h3><span data-en="Coming soon" data-ar="قريباً">Coming soon</span></div>
-          </article>
-          <article class="product-card">
-            <div class="product-visual visual-two"><span data-en="Hydration" data-ar="ترطيب">Hydration</span></div>
-            <div class="product-info"><p data-en="Skin comfort" data-ar="راحة البشرة">Skin comfort</p><h3 data-en="Serums & creams" data-ar="سيروم وكريمات">Serums & creams</h3><span data-en="Coming soon" data-ar="قريباً">Coming soon</span></div>
-          </article>
-          <article class="product-card">
-            <div class="product-visual visual-three"><span data-en="Sun Care" data-ar="العناية بالشمس">Sun Care</span></div>
-            <div class="product-info"><p data-en="Daily protection" data-ar="حماية يومية">Daily protection</p><h3 data-en="Lightweight SPF" data-ar="واقي شمس خفيف">Lightweight SPF</h3><span data-en="Coming soon" data-ar="قريباً">Coming soon</span></div>
-          </article>
-        </div>
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow" data-en="CONTACT" data-ar="تواصل">CONTACT</p>
+        <h2 data-en="Let’s talk about Korean beauty." data-ar="لنتحدث عن الجمال الكوري.">Let’s talk about Korean beauty.</h2>
+        <p data-en="Supplier, brand and business inquiries are welcome." data-ar="نرحب باستفسارات الموردين والعلامات التجارية والأعمال.">Supplier, brand and business inquiries are welcome.</p>
       </div>
-    </section>
-
-    <section class="section membership" id="membership">
-      <div class="container membership-card">
-        <div>
-          <p class="eyebrow" data-en="MEMBERSHIP" data-ar="العضوية">MEMBERSHIP</p>
-          <h2 data-en="Simple benefits for regular customers." data-ar="مزايا بسيطة للعملاء الدائمين.">Simple benefits for regular customers.</h2>
-          <p data-en="Membership, purchase history and future rewards will be available after the store system launches."
-             data-ar="ستتوفر العضوية وسجل المشتريات والمكافآت المستقبلية بعد إطلاق نظام المتجر.">
-            Membership, purchase history and future rewards will be available after the store system launches.
-          </p>
-        </div>
-        <span class="status-pill" data-en="Coming later" data-ar="قريباً">Coming later</span>
-      </div>
-    </section>
-
-    <section class="section" id="store">
-      <div class="container split">
-        <div>
-          <p class="eyebrow" data-en="STORE" data-ar="المتجر">STORE</p>
-          <h2 data-en="Our first store is being prepared in Amman." data-ar="يجري تجهيز متجرنا الأول في عمّان.">Our first store is being prepared in Amman.</h2>
-        </div>
-        <div class="store-card">
-          <div>
-            <span data-en="Location" data-ar="الموقع">Location</span>
-            <strong data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</strong>
-          </div>
-          <div>
-            <span data-en="Opening" data-ar="الافتتاح">Opening</span>
-            <strong data-en="To be announced" data-ar="سيتم الإعلان لاحقاً">To be announced</strong>
-          </div>
-          <div>
-            <span data-en="Store details" data-ar="تفاصيل المتجر">Store details</span>
-            <strong data-en="Address and hours coming soon" data-ar="العنوان وساعات العمل قريباً">Address and hours coming soon</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow" data-en="CONTACT" data-ar="تواصل">CONTACT</p>
-          <h2 data-en="Let’s talk about Korean beauty." data-ar="لنتحدث عن الجمال الكوري.">Let’s talk about Korean beauty.</h2>
-          <p data-en="Supplier, brand and business inquiries are welcome."
-             data-ar="نرحب باستفسارات الموردين والعلامات التجارية والأعمال.">
-            Supplier, brand and business inquiries are welcome.
-          </p>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:info@olivepeoplekbeauty.com">
-            <span>Email</span>
-            <strong>info@olivepeoplekbeauty.com</strong>
-          </a>
-          <a href="#" aria-disabled="true" class="disabled-link">
-            <span>WhatsApp</span>
-            <strong data-en="Number will be added soon" data-ar="سيتم إضافة الرقم قريباً">Number will be added soon</strong>
-          </a>
-        </div>
-      </div>
+      <a href="mailto:info@olivepeoplekbeauty.com"><span>Email</span><strong>info@olivepeoplekbeauty.com</strong></a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <a class="brand" href="#top">
-        <img src="logo.png" alt="" width="40" height="40" />
-        <span>OLIVE PEOPLE</span>
-      </a>
-      <p>© <span id="year"></span> OLIVE PEOPLE. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
-      <a href="#top" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a>
-    </div>
+  <footer>
+    <a class="brand" href="#top"><img src="logo.webp" alt="" width="38" height="38"><span>OLIVE PEOPLE</span></a>
+    <p>© <span id="year"></span> OLIVE PEOPLE. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+    <a href="#top" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a>
   </footer>
-
-  <script src="script-v41.js?v=41"></script>
+  <script src="script.js"></script>
 </body>
 </html>

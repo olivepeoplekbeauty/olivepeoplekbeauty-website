@@ -1,10 +1,17 @@
-# OLIVE PEOPLE K-BEAUTY Website V4.1
+# OLIVE PEOPLE Website V5
 
-Upload every file and the `assets` folder to the root of the GitHub repository, replacing existing files.
+Static website prepared for GitHub and Cloudflare Pages.
 
-V4.1 uses cache-busted filenames:
-- `styles-v41.css`
-- `script-v41.js`
-- `assets/hero-v41.png`
+## Upload
+Upload every file in this folder to the root of the GitHub repository, then commit.
 
-The full hero artwork is shown without cropping on mobile, and fills the hero area on desktop.
+Required files:
+- index.html
+- styles.css
+- script.js
+- hero-olive-water.webp
+- hero-olive-water.jpg
+- logo.webp
+- logo.png
+
+No build command is required.
