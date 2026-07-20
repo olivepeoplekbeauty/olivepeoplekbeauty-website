@@ -467,7 +467,7 @@ html[dir="rtl"] .hero-link-story{
 
     .hero picture img{
         min-height:0;
-        height:85vh;
+        height:100vh;
         object-fit:cover;
     }
 
