@@ -538,3 +538,18 @@ html[dir="rtl"] .store-card {
 .button{transition:all .3s ease;}
 .button:hover{transform:translateY(-2px);}
 .section{scroll-margin-top:90px;}
+
+
+/* V4 hero artwork placement */
+.hero{background:#dff4fb;align-items:stretch;}
+.hero-image{transform:none!important;transition:none!important;object-fit:cover;object-position:center center;}
+.hero:hover .hero-image{transform:none!important;}
+.hero-overlay{background:transparent!important;pointer-events:none;}
+.scroll-cue{display:none;}
+@media(max-width:900px){
+  .hero-image{object-position:center center;}
+}
+@media(max-width:560px){
+  .hero{min-height:100svh;}
+  .hero-image{object-position:58% center;}
+}
