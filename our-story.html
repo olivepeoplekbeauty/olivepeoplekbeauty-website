@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf9f3">
+  <meta name="description" content="OLIVE PEOPLE connects Korea and Jordan through beauty, lifestyle and trusted experiences.">
+  <title>Our Story | OLIVE PEOPLE</title>
+  <style>
+    :root{--olive:#26371f;--cream:#faf9f3;--line:#d9ddcf}
+    *{box-sizing:border-box}
+    html{background:var(--cream);scroll-behavior:smooth}
+    body{margin:0;color:var(--olive);background:var(--cream);font-family:Arial,"Noto Sans",sans-serif;-webkit-font-smoothing:antialiased}
+    button,a{-webkit-tap-highlight-color:transparent}
+    .topbar{height:clamp(68px,9vw,92px);padding:0 max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left));display:flex;align-items:center;justify-content:space-between;background:rgba(250,249,243,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--olive);text-decoration:none;font-weight:800;letter-spacing:.09em;font-size:clamp(18px,3.5vw,27px);min-height:48px}
+    .brand-mark{width:46px;height:46px;border:1.5px solid var(--olive);border-radius:50%;display:grid;place-items:center;font-size:25px;background:#fffdf8}
+    .home{min-width:48px;min-height:48px;display:grid;place-items:center;border:1px solid var(--line);border-radius:999px;color:var(--olive);text-decoration:none;font-size:22px;background:#fffdf9}
+    main{width:100%;overflow:hidden}
+    .story-frame{width:100%;max-width:1672px;margin:0 auto;background:#f8f6ee}
+    .story-frame img{display:block;width:100%;height:auto;object-fit:contain}
+    .story-summary{display:none}
+    @media(max-width:520px){
+      .topbar{height:70px}.brand{gap:8px;font-size:18px}.brand-mark{width:40px;height:40px;font-size:21px}
+      .story-frame{min-height:calc(100svh - 70px);display:flex;align-items:flex-start;background:#fbfaf5}
+      .story-frame img{width:100%;margin-top:0}
+    }
+    @media(min-width:1200px){body{background:#f1f1eb}.story-frame{box-shadow:0 18px 60px rgba(42,55,35,.12)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="OLIVE PEOPLE home"><span class="brand-mark" aria-hidden="true">🌿</span><span>OLIVE PEOPLE</span></a>
+    <a class="home" href="index.html" aria-label="Back to home">⌂</a>
+  </header>
+
+  <main>
+    <section class="story-frame" aria-labelledby="story-title">
+      <h1 id="story-title" class="story-summary">OLIVE PEOPLE — Our Mission, Vision and Promise</h1>
+      <img src="our-story-visual.png" alt="OLIVE PEOPLE mission, vision and promise, connecting Korea and Jordan through K-Beauty, K-Food, Lifestyle and Health, with Amman and the OLIVE PEOPLE store.">
+    </section>
+
+    <!-- History can be added here later without changing the story artwork above. -->
+  </main>
+</body>
+</html>
