@@ -1,0 +1,1 @@
+Upload index.html to the ROOT of your GitHub repository. This version is self-contained: the hero image, logo, CSS and JavaScript are embedded inside index.html, so there are no image paths that can break.
