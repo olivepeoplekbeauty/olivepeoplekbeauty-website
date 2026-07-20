@@ -1,5 +1,10 @@
-# OLIVE PEOPLE K-BEAUTY Website V4
+# OLIVE PEOPLE K-BEAUTY Website V4.1
 
-Uses the new wide olive leaves and water hero artwork.
+Upload every file and the `assets` folder to the root of the GitHub repository, replacing existing files.
 
-Upload all files and folders to the root of the GitHub repository, replacing existing files. Cloudflare Pages will redeploy automatically.
+V4.1 uses cache-busted filenames:
+- `styles-v41.css`
+- `script-v41.js`
+- `assets/hero-v41.png`
+
+The full hero artwork is shown without cropping on mobile, and fills the hero area on desktop.
