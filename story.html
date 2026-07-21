@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Our Story | OLIVE PEOPLE</title>
+
+  <style>
+    :root {
+      --page-bg: #f7f5ef;
+      --page-max: 1440px;
+      --olive: #46552c;
+      --olive-dark: #26351d;
+      --muted: #7a806f;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: var(--page-bg);
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+      min-height: 100svh;
+      background: var(--page-bg);
+      color: #26311f;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .story-page {
+      width: 100%;
+      max-width: var(--page-max);
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0 auto;
+      background: var(--page-bg);
+      overflow: hidden;
+    }
+
+    .story-header,
+    .story-main,
+    .story-footer {
+      width: 100%;
+    }
+
+    .story-header {
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px clamp(24px, 5vw, 72px);
+      border-bottom: 1px solid rgba(70, 85, 44, 0.12);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--olive-dark);
+      user-select: none;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      display: block;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+
+    .brand-copy {
+      display: grid;
+      gap: 1px;
+    }
+
+    .brand-name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0.12em;
+      white-space: nowrap;
+    }
+
+    .brand-tagline {
+      color: var(--muted);
+      font-size: 8px;
+      line-height: 1.2;
+      letter-spacing: 0.15em;
+      white-space: nowrap;
+    }
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--olive-dark);
+      user-select: none;
+    }
+
+    .language {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .menu-icon {
+      width: 26px;
+      height: 20px;
+      display: grid;
+      align-content: space-between;
+    }
+
+    .menu-icon span {
+      width: 100%;
+      height: 1.5px;
+      display: block;
+      border-radius: 2px;
+      background: currentColor;
+    }
+
+    .story-main {
+      min-height: calc(100svh - 212px);
+    }
+
+    .story-footer {
+      min-height: 100px;
+    }
+
+    @media (max-width: 700px) {
+      .story-header {
+        min-height: 86px;
+        padding: 14px 20px;
+      }
+
+      .brand {
+        gap: 9px;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .brand-tagline {
+        font-size: 6px;
+      }
+
+      .header-tools {
+        gap: 12px;
+      }
+
+      .language {
+        font-size: 9px;
+      }
+
+      .menu-icon {
+        width: 23px;
+        height: 17px;
+      }
+
+      .story-main {
+        min-height: calc(100svh - 166px);
+      }
+
+      .story-footer {
+        min-height: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="story-page">
+    <header class="story-header" aria-label="Page header">
+      <div class="brand" aria-label="Olive People">
+        <img class="brand-mark" src="logo.png" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <span class="brand-name">OLIVE PEOPLE</span>
+          <span class="brand-tagline">K-BEAUTY · K-LIFESTYLE</span>
+        </span>
+      </div>
+
+      <div class="header-tools" aria-hidden="true">
+        <span class="language">EN</span>
+        <span class="menu-icon"><span></span><span></span><span></span></span>
+      </div>
+    </header>
+    <main class="story-main" aria-label="Our Story"></main>
+    <footer class="story-footer" aria-label="Page footer"></footer>
+  </div>
+</body>
+</html>
