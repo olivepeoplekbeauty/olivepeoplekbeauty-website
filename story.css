@@ -1,6 +1,6 @@
 :root{color-scheme:light;background:#faf8f3}
 *{box-sizing:border-box}
-html,body{margin:0;min-width:320px;min-height:100%;background:#faf8f3}
+html,body{margin:0;min-width:320px;background:#eeeae1}
 body{font-family:Arial,sans-serif;overflow-x:hidden}
 .story-canvas{position:relative;width:100%;max-width:1920px;margin:0 auto;line-height:0;background:#faf8f3}
 .story-artwork{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
@@ -26,5 +26,10 @@ body{font-family:Arial,sans-serif;overflow-x:hidden}
 .language-menu button{min-width:44px;padding:8px;border:0;background:#fff;color:#263515;cursor:pointer}
 .language-menu button:hover,.language-menu button:focus{background:#f1eee7}
 @media (min-width:1921px){body{background:#faf8f3}}
-@media (max-width:700px){.language-menu{top:9%;right:8%;transform:scale(.85);transform-origin:top right}}
+@media (max-width:700px){
+html,body{min-height:0;background:#eeeae1}
+.story-canvas{width:128%;max-width:none;margin-left:-14%;overflow:hidden;background:#eeeae1}
+.story-artwork{width:100%;max-width:none}
+.language-menu{top:9%;right:8%;transform:scale(.85);transform-origin:top right}
+}
 @media (prefers-reduced-motion:no-preference){.story-artwork{animation:reveal .25s ease-out both}@keyframes reveal{from{opacity:.85}to{opacity:1}}}
