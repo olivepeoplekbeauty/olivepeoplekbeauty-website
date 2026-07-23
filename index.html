@@ -144,7 +144,7 @@ animation:waterSweep 11s ease-in-out infinite;
 
 /* ===== SHOPPING HEADER: edit this section for search/account/cart/language ===== */
 .shop-header{
-  position:absolute;z-index:60;top:0;right:0;left:39%;height:8.2%;
+  position:absolute;z-index:60;top:0;right:0;left:38%;height:8.2%;
   display:flex;align-items:center;justify-content:flex-end;gap:clamp(3px,1vw,11px);
   padding:0 clamp(10px,2.1vw,22px) 0 10px;
   background:linear-gradient(90deg,rgba(251,250,245,0),rgba(251,250,245,.78) 16%,rgba(251,250,245,.94) 34%);
@@ -154,25 +154,25 @@ animation:waterSweep 11s ease-in-out infinite;
   width:0;opacity:0;visibility:hidden;overflow:hidden;display:flex;align-items:center;
   border-bottom:1px solid rgba(39,48,25,.42);transition:width .28s ease,opacity .2s ease;
 }
-.shop-header.search-open .shop-search-form{width:100%;opacity:1;visibility:visible}
+.shop-header.search-open .shop-search-form{width:100%;min-width:clamp(150px,22vw,340px);opacity:1;visibility:visible}
 .shop-search-input{width:100%;min-width:0;padding:8px 4px;border:0;outline:0;background:transparent;color:#273019;font-size:clamp(11px,1.55vw,15px)}
 .shop-search-input::placeholder{color:#7c8174;opacity:.76}
 .shop-actions{
-  position:relative;display:flex;align-items:center;gap:clamp(0px,.28vw,3px);flex:0 0 auto;
+  position:relative;display:flex;align-items:center;gap:clamp(0px,.18vw,2px);flex:0 0 auto;
   transform:translateY(2px);padding-left:2px;background:#fbfaf5;
   box-shadow:0 0 0 8px #fbfaf5;
 }
 .shop-icon{
-  position:relative;width:clamp(34px,4.7vw,45px);height:clamp(34px,4.7vw,45px);padding:0;
+  position:relative;width:clamp(32px,4.3vw,42px);height:clamp(34px,4.7vw,45px);padding:0;
   display:grid;place-items:center;border:0;border-radius:50%;color:#273019;background:transparent;cursor:pointer;
   appearance:none;-webkit-appearance:none;outline:0;box-shadow:none;
   -webkit-tap-highlight-color:transparent;transition:background .18s ease,transform .12s ease;
 }
 .shop-icon:hover,.shop-icon:focus-visible{background:rgba(63,74,36,.09);outline:none}
 .shop-icon:active{transform:scale(.94)}
-.shop-icon svg{width:52%;height:52%;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.shop-icon svg{width:58%;height:58%;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .cart-count{
-  position:absolute;right:-1px;bottom:5px;min-width:0;height:auto;padding:0;
+  position:absolute;right:-1px;bottom:7px;min-width:0;height:auto;padding:0;
   display:block;color:currentColor;background:transparent;border:0;border-radius:0;
   font-size:9px;font-weight:600;line-height:1;
 }
@@ -187,14 +187,16 @@ animation:waterSweep 11s ease-in-out infinite;
 .shop-popover-note{margin:0;padding:8px 10px 10px;color:#687060;font-size:11px;line-height:1.45}
 .header-menu-icon{display:none}
 @media(max-width:560px){
-  .shop-header{left:34%;gap:1px;padding-right:7px;background:transparent}
-  .shop-header.search-open{left:24%;background:linear-gradient(90deg,rgba(251,250,245,0),rgba(251,250,245,.94) 16%,#fbfaf5 30%)}
+  .shop-header{left:33%;gap:1px;padding-right:7px;background:transparent}
+  .shop-header.search-open{left:33%;background:linear-gradient(90deg,rgba(251,250,245,0),rgba(251,250,245,.94) 12%,#fbfaf5 27%)}
   .shop-actions{gap:0;transform:translateY(2px)}
-  .shop-icon{width:28px;height:31px}
+  .shop-icon{width:26px;height:31px}
+  .shop-icon svg{width:60%;height:60%}
   .header-menu-button{width:31px}
-  .cart-count{right:-2px;bottom:3px;font-size:7.5px}
+  .cart-count{right:-2px;bottom:7px;font-size:7.5px}
   .shop-icon:hover,.shop-icon:focus,.shop-icon:focus-visible{background:transparent;box-shadow:none;outline:0}
   .shop-header.search-open .account-button{display:none}
+  .shop-header.search-open .shop-search-form{min-width:0}
   .shop-search-input{font-size:10px}
   .language-popover{right:7px;top:84%}
   .account-popover{right:70px;top:84%}
@@ -240,7 +242,7 @@ animation:waterSweep 11s ease-in-out infinite;
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3C9.6 5.5 8.4 8.5 8.4 12s1.2 6.5 3.6 9"/></svg>
       </button>
       <button class="shop-icon header-menu-button" id="headerMenuButton" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h16M4 12h16M4 19.5h16"/></svg>
       </button>
     </div>
     <div class="account-popover" id="accountPopover">
