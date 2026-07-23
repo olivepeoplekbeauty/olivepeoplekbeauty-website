@@ -157,16 +157,25 @@ animation:waterSweep 11s ease-in-out infinite;
 .shop-header.search-open .shop-search-form{width:100%;opacity:1;visibility:visible}
 .shop-search-input{width:100%;min-width:0;padding:8px 4px;border:0;outline:0;background:transparent;color:#273019;font-size:clamp(11px,1.55vw,15px)}
 .shop-search-input::placeholder{color:#7c8174;opacity:.76}
-.shop-actions{display:flex;align-items:center;gap:clamp(0px,.28vw,3px);flex:0 0 auto;transform:translateY(2px);padding-left:2px;background:#fbfaf5}
+.shop-actions{
+  position:relative;display:flex;align-items:center;gap:clamp(0px,.28vw,3px);flex:0 0 auto;
+  transform:translateY(2px);padding-left:2px;background:#fbfaf5;
+  box-shadow:0 0 0 8px #fbfaf5;
+}
 .shop-icon{
   position:relative;width:clamp(34px,4.7vw,45px);height:clamp(34px,4.7vw,45px);padding:0;
   display:grid;place-items:center;border:0;border-radius:50%;color:#273019;background:transparent;cursor:pointer;
+  appearance:none;-webkit-appearance:none;outline:0;box-shadow:none;
   -webkit-tap-highlight-color:transparent;transition:background .18s ease,transform .12s ease;
 }
 .shop-icon:hover,.shop-icon:focus-visible{background:rgba(63,74,36,.09);outline:none}
 .shop-icon:active{transform:scale(.94)}
 .shop-icon svg{width:52%;height:52%;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.cart-count{position:absolute;top:1px;right:0;min-width:17px;height:17px;padding:0 4px;display:grid;place-items:center;color:white;background:#45552b;border-radius:999px;font-size:10px;font-weight:700}
+.cart-count{
+  position:absolute;right:-1px;bottom:5px;min-width:0;height:auto;padding:0;
+  display:block;color:currentColor;background:transparent;border:0;border-radius:0;
+  font-size:9px;font-weight:600;line-height:1;
+}
 .language-popover,.account-popover{
   position:absolute;top:78%;right:clamp(12px,2.4vw,26px);width:148px;padding:7px;
   display:none;background:#fff;border:1px solid #dfe3d6;border-radius:13px;box-shadow:0 12px 30px rgba(39,48,25,.16);
@@ -183,6 +192,8 @@ animation:waterSweep 11s ease-in-out infinite;
   .shop-actions{gap:0;transform:translateY(2px)}
   .shop-icon{width:28px;height:31px}
   .header-menu-button{width:31px}
+  .cart-count{right:-2px;bottom:3px;font-size:7.5px}
+  .shop-icon:hover,.shop-icon:focus,.shop-icon:focus-visible{background:transparent;box-shadow:none;outline:0}
   .shop-header.search-open .account-button{display:none}
   .shop-search-input{font-size:10px}
   .language-popover{right:7px;top:84%}
@@ -223,7 +234,7 @@ animation:waterSweep 11s ease-in-out infinite;
       </button>
       <button class="shop-icon cart-button" id="cartButton" type="button" aria-label="Cart, 0 items">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20.5 7H6"/><circle cx="9.5" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg>
-        <span class="cart-count" id="cartCount">0</span>
+        <span class="cart-count" id="cartCount">(0)</span>
       </button>
       <button class="shop-icon globe-button" id="globeButton" type="button" aria-label="Choose language" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3C9.6 5.5 8.4 8.5 8.4 12s1.2 6.5 3.6 9"/></svg>
